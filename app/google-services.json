@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381781157212",
+    "firebase_url": "https://welcome-cirebon.firebaseio.com",
+    "project_id": "welcome-cirebon",
+    "storage_bucket": "welcome-cirebon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381781157212:android:80a42dcb3e54b296b04d99",
+        "android_client_info": {
+          "package_name": "com.example.cirebon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381781157212-gukjpb2v4c9oqea8oa46vl9a1o0u56h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8XtkcDPNGMIWErykDpznXifAMq-0SBJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381781157212-gukjpb2v4c9oqea8oa46vl9a1o0u56h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="302dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cirebon_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="@drawable/roundedupblue"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+                <EditText
+                    android:id="@+id/et_emaillogin"
+                    android:layout_width="341dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:background="@drawable/strokonly"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:layout_marginTop="50dp"
+                    android:padding="5dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_password_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@android:color/black">
+
+                    <EditText
+                        android:id="@+id/et_passwordlogin"
+                        android:layout_width="341dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/strokonly"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/roundedbtn5"
+                    android:onClick="btn_login"
+                    android:textAllCaps="false"
+                    android:text="@string/splashscreen_login"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_akun"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_signup"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_daftar"
+                        android:textColor="#FF0404"
+                        android:onClick="daftar"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

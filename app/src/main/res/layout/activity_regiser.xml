@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegiserActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/cirebon_bg"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/roundedupblue">
+                <EditText
+                    android:id="@+id/et_firstnameignup"
+                    android:layout_width="341dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/register_nama"
+                    android:padding="10dp"
+                    android:ellipsize="start"
+                    android:background="@drawable/strokonly"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="50dp"
+                    android:inputType="text"/>
+
+                <EditText
+                    android:id="@+id/et_emailsignup"
+                    android:layout_width="341dp"
+                    android:layout_height="50dp"
+                    android:hint="Email"
+                    android:ellipsize="start"
+                    android:background="@drawable/strokonly"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:inputType="textEmailAddress"/>
+                <EditText
+                    android:id="@+id/et_phoneignup"
+                    android:layout_width="341dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/no_telepon"
+                    android:padding="10dp"
+                    android:ellipsize="start"
+                    android:background="@drawable/strokonly"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:id="@+id/et_passwordsignup"
+                    android:layout_width="341dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/strokonly"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="start"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="18dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_password_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@android:color/black">
+                    <EditText
+                        android:id="@+id/et_confirmpassword"
+                        android:layout_width="341dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/strokonly"
+                        android:padding="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:hint="@string/registrasi_password"
+                        android:inputType="textPassword"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_width="341dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/roundedbtn5"
+                    android:text="@string/splashscreen_daftar"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:onClick="Sign_up"
+                    android:layout_marginTop="15dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/splashscreen_akun"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FF0404"
+                        android:onClick="registermasuk"
+                        android:text="@string/splashscreen_login"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
